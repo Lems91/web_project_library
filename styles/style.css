@@ -46,7 +46,10 @@
 .nav__link:hover {
   color: #1f69c9;
 }
-
+.header__content {
+}
+.header__main {
+}
 .header__title {
   font-size: 62px;
   line-height: 76px;
