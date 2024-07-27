@@ -43,6 +43,8 @@
   cursor: pointer;
 }
 .header__content {
+  display: flex;
+  justify-content: space-between;
 }
 .header__main {
 }
