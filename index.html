@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Biblioteca Triple</title>
+    <title>Biblioteca Triple Peaks</title>
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="./vendor/normalize.css" />
     <link rel="stylesheet" href="./styles/style.css" />
@@ -15,30 +15,30 @@
         <nav class="nav">
           <img
             src="./images/logo.svg"
-            alt="Triple Peaks Library Logo"
+            alt="Logotipo de la Biblioteca Triple Peaks"
             class="nav__logo"
           />
           <ul class="nav__links">
             <li>
-              <a class="navlink" href="#staff"
+              <a href="#staff" class="nav__link"
                 >Los preferidos de nuestro staff</a
               >
             </li>
             <li>
-              <a class="navlink" href="#events">Eventos</a>
+              <a href="#events" class="nav__link">Eventos</a>
             </li>
             <li>
-              <a class="navlink" href="#membership"> Conviértete en miembro</a>
+              <a href="#membership" class="nav__link">Conviértete en miembro</a>
             </li>
             <li>
-              <a class="navlink" href="#footer">Contacto</a>
+              <a href="#contacts" class="nav__link">Contactos</a>
             </li>
           </ul>
         </nav>
         <div class="header__content">
           <div>
             <h1 class="header__title">
-              Bienvenidos a la biblioteca de Triple Peaks
+              Bienvenidos a la biblioteca Triple Peaks
             </h1>
             <p class="header__description">
               ¡Nos complace abrir las puertas de nuestra biblioteca a todos! Ven
@@ -46,51 +46,131 @@
               trabajar o estudiar con nosotros. ¡Este es un lugar genial para
               estudiantes!
             </p>
-            <img
-              src="./images/inside_the_library.png"
-              alt="Illustration 'Inside the library'"
-              class="header__image"
-            />
           </div>
-          <div class="header__footer">
-            <a href="#nosotros" class="header__link"
-              >Sobre la librería &darr;</a
-            >
-            <p class="header__address">
-              Avenida del Éxito 200, Ciudad Triple Peaks
-            </p>
-          </div>
+          <img
+            src="./images/inside_the_library.png"
+            alt="Ilustración 'Dentro de la biblioteca'"
+            class="header__image"
+          />
+        </div>
+        <div class="header__footer">
+          <p class="header__address">Triple Peaks, 200 Success Avenue</p>
         </div>
       </header>
+
       <main class="content">
+        <section id="staff" class="staff">
+          <h2 class="staff__title">Los preferidos de nuestro staff</h2>
+          <p class="staff__subtitle">Que nuestros lectores y lectoras aman</p>
+          <ul class="staff__cards">
+            <li id="primer-enlace" class="card">
+              <div class="card__content">
+                <h3 class="card__title">Introducción a los algoritmos</h3>
+                <p class="card__text">
+                  El nombre de este libro se explica por sí solo; ¡es una buena
+                  Introducción a los algoritmos! Introducción a los algoritmos,
+                  o CLRS, en referencia a los apellidos de los autores,
+                  profundiza y abarca una serie de algoritmos a lo largo de
+                  varios capítulos independientes.
+                </p>
+                <p class="card__footer">
+                  Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest,
+                  Clifford Stein
+                </p>
+              </div>
+            </li>
+
+            <li id="segundo-enlace" class="card">
+              <div class="card__content">
+                <h3 class="card__title">
+                  La estructura e interpretación de los programas
+                  computacionales (SICP)
+                </h3>
+                <p class="card__text">
+                  Este es uno de los mejores libros para aprender los conceptos
+                  básicos de la programación. Incluido por el MIT en uno de sus
+                  cursos básicos de programación, SICP es un libro de
+                  programación de carácter general que utiliza Scheme para
+                  ilustrar diversos conceptos de programación.
+                </p>
+                <p class="card__footer">
+                  Harold Abelson, Gerald Jay Sussman, Julie Sussman
+                </p>
+              </div>
+            </li>
+
+            <li id="tercer-enlace" class="card">
+              <div class="card__content">
+                <h3 class="card__title">
+                  El programador limpio: un código de conducta para
+                  programadores profesionales
+                </h3>
+                <p class="card__text">
+                  Compilado por el experimentado ingeniero de software y autor
+                  Robert C. Martin (también conocido como "Tío Bob"), este libro
+                  abarca las técnicas y herramientas de la verdadera artesanía
+                  de software. Explica cómo escribir código limpio y muestra
+                  cómo cultivar la actitud de un programador experto y
+                  profesional.
+                </p>
+                <p class="card__footer">Steve McConnell</p>
+              </div>
+            </li>
+
+            <li id="cuarto-enlace" class="card">
+              <div class="card__content">
+                <h3 class="card__title">
+                  Código completo: un manual práctico de construcción de
+                  software
+                </h3>
+                <p class="card__text">
+                  ¿Te gustaría saber cómo escribir un buen código al margen de
+                  la arquitectura del lenguaje de programación que hayas
+                  elegido? Después, podrías leer Code Complete: A Practical
+                  Handbook of Software Construction ("Código completo: un
+                  práctico manual sobre creación de software"). Este aborda de
+                  manera exhaustiva todo lo relacionado con la buena estructura
+                  de código.
+                </p>
+                <p class="card__footer">Steve McConnell</p>
+              </div>
+            </li>
+          </ul>
+        </section>
         <section id="events" class="events">
           <div class="events__content">
             <h2 class="events__heading">Próximos eventos:</h2>
             <h3 class="events__title">
-              En honor a Joan Feynman: "Las mujeres en la astrofísica"
+              En honor de Joan Feynman: mujeres en la astrofísica
             </h3>
             <div class="event-info events__info-section">
               <div class="event-info__item">
-                <div
-                  class="event-info__icon event-info__icon_type_calendar"
-                ></div>
-                <p class="event-info__text">Lunes, 12 de enero.</p>
+                <img
+                  src="./images/icon_calendar.svg"
+                  alt="Calendar icon"
+                  class="event-info__icon"
+                />
+                <p class="event-info__text">Lunes 12 de enero</p>
               </div>
               <div class="event-info__item">
-                <div class="event-info__icon event-info__icon_type_pin"></div>
+                <img
+                  src="./images/icon_pin.svg"
+                  alt="Pin icon"
+                  class="event-info__icon"
+                />
                 <p class="event-info__text">
-                  Sala de conferencias y virtual de la biblioteca de Triple
+                  Sala de conferencias y virtual de la biblioteca Triple Peaks
                 </p>
               </div>
             </div>
             <p class="events__description">
-              En este evento, que celebra el nombre de la biblioteca, nuestra
-              conferencista invitada nos llevará a un viaje para conocer a las
-              investigadoras más destacadas en ciencia espacial a nivel mundial.
-              Se suele tener la falsa idea de que este campo está mayormente
-              dominado por los hombres, pero nuestra conferencia busca cambiar
-              esa noción y probar que no ha sido así desde, al menos, el siglo
-              XVIII.
+              En este evento, en el que celebramos el nombre de nuestra
+              biblioteca, nuestra invitada nos llevará a través de un viaje para
+              conocer a algunas de las mujeres investigadoras más importantes en
+              el mundo de la ciencia espacial. Es fácil caer en la falsa idea de
+              que este campo está principalmente dominado por hombres, pero
+              nuestra conferencia busca cambiar esa noción y probar que no ha
+              sido así desde, al menos, el siglo XVII.
             </p>
             <a href="#" class="events__more">Más eventos &rarr;</a>
           </div>
@@ -98,14 +178,14 @@
             <img
               class="events__image"
               src="images/cafe.png"
-              alt="sala de cafe"
+              alt="imagen descriptiva"
             />
             <div class="person person_name_feynman">
               <p class="person__caption">Joan Feynman</p>
               <img
                 class="person__image person__image_size_l"
                 src="images/person_feynman.png"
-                alt="J_Feynman"
+                alt="Joan Feynman"
               />
             </div>
             <div class="person person_name_burbidge">
@@ -113,14 +193,14 @@
               <img
                 class="person__image person__image_size_m"
                 src="images/person_burbidge.png"
-                alt="M_Burbidge"
+                alt="Margaret Burbidge"
               />
             </div>
             <div class="person person_name_cannon">
               <img
                 class="person__image person__image_size_m"
                 src="images/person_cannon.png"
-                alt="A_J_Cannon"
+                alt="Annie Jump Cannon"
               />
               <p class="person__caption">Annie Jump Cannon</p>
             </div>
@@ -128,7 +208,7 @@
               <img
                 class="person__image person__image_size_s"
                 src="images/person_mitchell.png"
-                alt="M_Mitchell"
+                alt="Maria Mitchell"
               />
               <p class="person__caption">Maria Mitchell</p>
             </div>
@@ -137,97 +217,14 @@
               <img
                 class="person__image person__image_size_m"
                 src="images/person_tarter.png"
-                alt="J_Tarter"
+                alt="Jill Tarter"
               />
             </div>
           </div>
         </section>
-        <section id="staff" class="staff">
-          <!-- --------------------------------------------------------------- -->
-          <!--   No descomentar hasta la etapa final del proyecto.         -->
-          <!-- --------------------------------------------------------------- -->
-          <h2 class="staff__title">Los Preferidos de Nuestros Lectores</h2>
-          <p class="staff__subtitle">Los que ellos aman</p>
-          <ul class="staff__cards">
-            <li class="card">
-              <div class="card__content">
-                <h3 class="card__title">El Viajero en el Tiempo</h3>
-                <p class="card__text">
-                  El nombre de este libro se explica por sí solo, exploramos las
-                  maravillas y paradojas de la temportalidad. Desde la Edad
-                  Media hasta el futuro lejano el protagonista se embarca en un
-                  viaje, cuya odisea descubre la fragilidad del tiempo, los
-                  desafios eticos y morales surgen cuando intenta cambiar el
-                  pasado para alterar el presente. La narrativa mezcla intriga
-                  romance, reflexion y filosofia. En su busqueda de comprender
-                  la naturaleza del tiempo, el viajero enfrenta dilemas
-                  existenciales y consecuencias inesperadas.
-                </p>
-                <p class="card__footer">H. G. Wells</p>
-              </div>
-            </li>
-
-            <li class="card">
-              <div class="card__content">
-                <h3 class="card__title">
-                  El Surgimiento de las Criptomonedas: La Revolucion del Bitcoin
-                  y la Tecnologia Blockchain
-                </h3>
-                <p class="card__text">
-                  Este es uno de los mejores libros para aprender los conceptos
-                  básicos de criptomonedas. Nos muestra como en 2009 se origino
-                  una revolucion financiera descentralizada, al publicarse el
-                  whitepaper de Bitcoin por una persona o grupo bajo el nombre
-                  de Satoshi Nakamoto , esta innovacion introdujo el concepto de
-                  Blockchain, una tecnologia de registro distribuido que permite
-                  transacciones seguras y transparentes sin necesidad de
-                  intermediarios. A lo largo del tiempo hemos visto como el
-                  mundo cipto gana popularidad, dando lugar a un gran numero de
-                  proyectos y tecnologias en el espacio DeFi.
-                </p>
-                <p class="card__footer">L. E. Sanchez</p>
-              </div>
-            </li>
-
-            <li class="card">
-              <div class="card__content">
-                <h3 class="card__title">
-                  El programador limpio: un código de conducta para
-                  programadores profesionales
-                </h3>
-                <p class="card__text">
-                  Elaborado por el experimentado ingeniero de software y
-                  escritor Rober C. Martin (también conocido como Tío Bob),
-                  analiza las técnicas y herramientas de la verdadera artesanía
-                  de software. Explica cómo escribir código limpio y muestra
-                  cómo cultivar la actitud de un programador profesional,
-                  altamente cualificado.
-                </p>
-                <p class="card__footer">Steve McConnell</p>
-              </div>
-            </li>
-
-            <li class="card">
-              <div class="card__content">
-                <h3 class="card__title">
-                  Código completo: un manual práctico de construcción de
-                  software
-                </h3>
-                <p class="card__text">
-                  ¿Quieres saber cómo escribir código robusto independientemente
-                  de la arquitectura detrás del lenguaje de programación de tu
-                  elección? Entonces, podrías leer Código completo: un práctico
-                  manual sobre construcción de software. El cual abarca de forma
-                  general todo lo relacionado con la buena estructura de código.
-                </p>
-                <p class="card__footer">Steve McConnell</p>
-              </div>
-            </li>
-          </ul>
-        </section>
         <section id="membership" class="membership">
           <h2 class="membership__title">
-            ¡Convertirse en miembro de la biblioteca es muy fácil!
+            ¡Convertirse en miembro es muy fácil!
           </h2>
           <ul class="membership__steps">
             <li class="step">
@@ -282,46 +279,18 @@
             </li>
           </ul>
         </section>
-        <!--<section id="nosotros" class="about">
-          <h2 class="about__title">Sobre la biblioteca</h2>
-          <div class="about__content">
-            <p class="about__paragraph">
-              Las bibliotecas son centros imprescindibles en prácticamente
-              cualquier ciudad, y TripleTen no es la excepción. Abrió sus
-              puertas por primera vez en 2018, ¡cuando nuestra pequeña ciudad
-              daba la bienvenida a sus primeros habitantes!
-            </p>
-            <p class="about__paragraph">
-              Desde su apertura inicial, la biblioteca ha recibido casi 342
-              visitantes cada mes. ¡Es casi el 50% de nuestra población! Hasta
-              ahora, la mayoría de nuestros ciudadanos han disfrutado de leer
-              libros y hacer uso de nuestros amplios recursos en línea.
-            </p>
-            <p class="about__paragraph">
-              La biblioteca toma su nombre en honor a Joan Feynman, una
-              astrofísica estadounidense y la primera mujer en ser elegida como
-              oficial de la Unión Geofísica Americana.
-            </p>
-          </div>
-          <div class="about__circle"></div>
-        </section>-->
       </main>
-
-      <footer id="footer" class="footer">
+      <footer id="contacts" class="footer">
         <div class="footer__columns">
           <div class="footer__column">
-            <img
-              class="footer__logo"
-              src="images/logo-white.svg"
-              alt="biblioteca logo"
-            />
+            <img src="images/logo_white.svg" alt="logo" class="footer__logo" />
           </div>
           <div class="footer__column footer__column_content_hours">
-            <h4 class="footer__column-heading">Horas</h4>
+            <h4 class="footer__column-heading">Horario de apertura</h4>
             <ul class="footer__list">
-              <li class="footer__list-item">Lunes a viernes: 9a.m.-8p.m.</li>
+              <li class="footer__list-item">Lunesa Viernes 9 a.m - 8 p.m</li>
               <li class="footer__list-item">
-                Sábados y domingos: 10a.m.-6p.m.
+                Sábados y Domingos 10 a.m - 6 p.m
               </li>
             </ul>
           </div>
@@ -329,29 +298,29 @@
             <h4 class="footer__column-heading">Redes Sociales</h4>
             <ul class="footer__list">
               <li class="footer__list-item">
-                <a class="footer__column-link" href="#">
-                  <img
-                    src="./images/facebook_white.svg"
-                    alt="logo facebook"
+                <a class="footer__column-link" href="#"
+                  ><img
+                    src="images/facebook_white.svg"
                     class="footer__social-icon"
+                    alt="facebook icon"
                   />
-                  Facebook
-                </a>
+                  Facebook</a
+                >
               </li>
               <li class="footer__list-item">
-                <a class="footer__column-link" href="#">
-                  <img
-                    src="./images/instagram_white.svg"
-                    alt="logo instagram"
+                <a class="footer__column-link" href="#"
+                  ><img
+                    src="images/instagram_white.svg"
                     class="footer__social-icon"
+                    alt="instagram icon"
                   />
-                  Instagram
-                </a>
+                  Instagram</a
+                >
               </li>
             </ul>
           </div>
         </div>
-        <p class="footer__copyright">© 2023 Luis E. Sanchez P.</p>
+        <p class="footer__copyright">© 2024 Luis</p>
       </footer>
     </div>
   </body>
